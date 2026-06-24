@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer-root">
       <div className="container grid md:grid-cols-4 gap-4 footer-content">
-        
+
         {/* Brand & Mission */}
         <div>
           <Link to="/" className="footer-logo">
@@ -55,20 +55,20 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-1">
               <Phone size={18} className="text-secondary" />
-              <span>+91 99999 99999</span>
+              <span>+91 93584 63311</span>
             </li>
             <li className="flex items-center gap-1">
               <Mail size={18} className="text-secondary" />
-              <span>info@sumoriya.com</span>
+              <span>sumoriyaorganic@gmail.com</span>
             </li>
           </ul>
         </div>
 
       </div>
       <div className="footer-bottom">
-        <div className="container flex justify-between items-center" style={{flexWrap: 'wrap', gap: '1rem'}}>
+        <div className="container flex justify-between items-center" style={{ flexWrap: 'wrap', gap: '1rem' }}>
           <p>&copy; {new Date().getFullYear()} Sumoriya Organic Agro Gold India Pvt Ltd. All rights reserved.</p>
-          <p>Created by Antigravity</p>
+
         </div>
       </div>
     </footer>
