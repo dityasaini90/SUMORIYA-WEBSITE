@@ -1,11 +1,11 @@
 import { MessageCircle } from 'lucide-react'
 
 const WhatsAppButton = () => {
-  const phoneNumber = '+919999999999' // Replace with actual number
+  const phoneNumber = '+91 93584 63311'
   const message = encodeURIComponent("Hello, I'm interested in mushroom farming setup")
-  
+
   return (
-    <a 
+    <a
       href={`https://wa.me/${phoneNumber}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
