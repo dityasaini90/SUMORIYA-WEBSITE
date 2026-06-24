@@ -1,0 +1,253 @@
+/* Home.css */
+
+.hero-section {
+  padding: 4rem 0 6rem 0;
+  background: linear-gradient(to bottom, #ffffff, #f0f7ed);
+  overflow: hidden;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(45, 80, 22, 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.trust-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.hero-image-wrapper {
+  position: relative;
+}
+
+.hero-img-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: transform 0.5s ease;
+}
+
+.hero-img-frame:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-width: 200px;
+  border-left: 4px solid var(--secondary);
+}
+
+/* Services */
+.bg-primary-light { background: rgba(45, 80, 22, 0.1); }
+.bg-secondary-light { background: rgba(212, 175, 55, 0.15); }
+.text-secondary-dark { color: #b8982f; }
+.bg-gray-light { background: #f3f4f6; }
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-top: 4px solid transparent;
+}
+
+.service-card:hover {
+  border-top-color: var(--primary);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.price-tag {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.service-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 1.5rem;
+  transition: gap 0.3s ease;
+}
+
+.link-arrow:hover {
+  gap: 0.8rem;
+}
+
+/* Process Tracker */
+.process-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .process-tracker {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.process-step {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 10px rgba(45, 80, 22, 0.1);
+}
+
+.process-line {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .process-line {
+    display: block;
+    flex: 1;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 25px; /* align with center of circle */
+    opacity: 0.5;
+  }
+}
+
+/* Buyback Banner */
+.buyback-cta {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.buyback-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at center, rgba(212,175,55,0.2) 0%, transparent 70%);
+}
+
+.buyback-cta .text-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
